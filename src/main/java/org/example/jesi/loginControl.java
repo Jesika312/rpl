@@ -46,8 +46,8 @@ public class loginControl {
                       FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("homeUI.fxml"));
                       Scene sc = new Scene(fxmlLoader.load());
                       Stage stage = (Stage) btnLogin.getScene().getWindow();
-//                      HomeControl homeControl = fxmlLoader.getController();
-//                      homeControl.set
+                      HomeControl homeControl = fxmlLoader.getController();
+                      homeControl.setAndInitializeUser(uname,name);
                       stage.setScene(sc);
                       stage.setResizable(false);
                       stage.show();
@@ -56,7 +56,7 @@ public class loginControl {
                   } catch (Exception e) {
                       e.printStackTrace();
                   }
-              }
+              }else{a = new Alert(Alert.AlertType.ERROR);a.setHeaderText("Error");a.setContentText("Login failed ! Please Check again.");a.showAndWait();username.requestFocus();}
           }
       } catch (SQLException e) {
           e.printStackTrace();

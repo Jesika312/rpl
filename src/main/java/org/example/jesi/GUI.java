@@ -12,7 +12,7 @@ public class GUI extends Application {
         FXMLLoader fx = new FXMLLoader(GUI.class.getResource("sign_in.fxml"));
         Scene sc = new Scene(fx.load());
         stage.setResizable(false);
-        stage.setTitle("Obat Jessy");
+        stage.setTitle("VOQ Apps");
         stage.setScene(sc);
         stage.show();
     }
