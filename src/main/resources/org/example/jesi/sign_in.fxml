@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.jesi.loginControl">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="304.0">
+         <children>
+            <Pane prefHeight="800.0" prefWidth="304.0" style="-fx-background-color: #F6BD60;">
+               <children>
+                  <ImageView fitHeight="308.0" fitWidth="311.0" layoutX="-11.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@IMG/VoQ-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="800.0" prefWidth="977.0">
+         <children>
+            <Pane layoutX="146.0" layoutY="50.0" prefHeight="429.0" prefWidth="672.0" style="-fx-border-color: #000; -fx-border-radius: 20;" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="100.0">
+               <children>
+                  <Hyperlink layoutX="466.0" layoutY="336.0" text="Forget Password">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Hyperlink>
+                  <Label layoutX="605.0" layoutY="24.0" text="No Account?">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Hyperlink layoutX="618.0" layoutY="39.0" text="Sign Up">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Hyperlink>
+                  <GridPane layoutX="1.0" layoutY="-1.0" prefHeight="333.0" prefWidth="589.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="341.7777099609375" minWidth="5.555572509765625" prefWidth="35.555572509765625" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="662.6666870117188" minWidth="10.0" prefWidth="553.1110941569011" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="138.55555725097656" minHeight="10.0" prefHeight="75.33333333333334" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="208.77777099609375" minHeight="10.0" prefHeight="50.99998982747394" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="208.77777099609375" minHeight="10.0" prefHeight="65.33332824707031" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="208.77777099609375" minHeight="10.0" prefHeight="86.00000508626303" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="208.77777099609375" minHeight="10.0" prefHeight="60.444417317708314" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="208.77777099609375" minHeight="10.0" prefHeight="64.888916015625" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label prefHeight="30.0" prefWidth="203.0" style="-fx-text-fill: #F6BD60;" text="Welcome To VoQ" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="SIGN IN" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="23.0" />
+                           </font>
+                        </Label>
+                        <Label text="Enter your Username or Email" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label text="Enter your Password" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="username" prefHeight="50.0" prefWidth="370.0" promptText="Username or Email" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                        <PasswordField fx:id="password" prefHeight="45.0" prefWidth="554.0" promptText="Password" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                     </children>
+                  </GridPane>
+               </children>
+            </Pane>
+            <Button fx:id="btnLogin" layoutX="605.0" layoutY="584.0" mnemonicParsing="false" onAction="#btnLoginClick" prefHeight="67.0" prefWidth="228.0" style="-fx-background-color: #84A59D; -fx-text-fill: white;" text="Sign In">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>
